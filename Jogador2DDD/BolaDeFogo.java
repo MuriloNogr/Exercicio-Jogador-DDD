@@ -1,0 +1,35 @@
+package br.com.fiap.jogador2;
+
+import java.util.Random;
+
+public class BolaDeFogo {
+	private int x;
+    private int y;
+    private int poder;
+
+    public BolaDeFogo(int poder) {
+        this.poder = poder;
+    }
+
+    public void mover() {
+        Random aleatorio = new Random();
+        setX(aleatorio.nextInt(10));
+        setY(aleatorio.nextInt(10));
+    }
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+}
